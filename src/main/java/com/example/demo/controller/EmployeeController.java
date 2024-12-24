@@ -1,7 +1,7 @@
 package com.example.demo.controller;
 
 import com.example.demo.repository.EmployeeRepository;
-import com.example.demo.entitiy.Employee;
+import com.example.demo.entity.Employee;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
