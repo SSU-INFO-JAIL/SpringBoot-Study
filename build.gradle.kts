@@ -24,6 +24,8 @@ repositories {
 }
 
 dependencies {
+	implementation ("org.hibernate.validator:hibernate-validator:8.0.0.Final")
+	implementation ("jakarta.validation:jakarta.validation-api:3.0.2")
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.2.0")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-web")
