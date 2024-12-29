@@ -12,6 +12,9 @@
 ## Command + shift + a
 - 모든 액션 찾기 (Find Action): IntelliJ의 모든 액션을 검색할 수 있습니다.
 
+## Command + shift + t
+- 테스트 생성/이동 (Create/Go to Test): 현재 클래스의 테스트 클래스를 생성하거나, 이미 존재하는 경우 해당 테스트 클래스로 이동합니다.
+
 ## Command + e
 - 최근 파일 (Recent Files): 최근에 열었던 파일 목록을 표시합니다.
 
