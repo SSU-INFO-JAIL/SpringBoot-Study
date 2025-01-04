@@ -6,15 +6,14 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 @Getter
+@Setter
 @Entity
-@Table(name = "employees")
-public class Employee {
-    // Getters and Setters
-    @Id
-    private int emp_no;
-    private String first_name;
-    private String last_name;
+@Table(name = "member")
+public class Member {
 
+    @Id
+    private String member_id;
+    private String member_name;
+    private String member_addr;
 }
