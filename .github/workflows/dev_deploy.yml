@@ -34,15 +34,14 @@ jobs:
         working-directory: Application
 
       - name: Build with Gradle  # Gradle을 사용하여 프로젝트 빌드
-        uses: gradle/actions/setup-gradle@v3
-        with:
-          arguments: build
+        run: ./gradlew build
+        working-directory: Application
 
       - name: Upload build artifact  # 빌드된 아티팩트 업로드
         uses: actions/upload-artifact@v3
         with:
           name: demo server application 
-          path: build/libs/*.jar
+          path: Application/build/libs/*.jar
 
   deploy:
     needs: build  # build 작업이 성공적으로 완료된 후 실행
