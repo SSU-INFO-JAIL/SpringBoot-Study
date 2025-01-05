@@ -17,10 +17,13 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
+      - name: Check directory  # 현재 디렉토리 확인
+        run: pwd
+
       - name: Make application.properties  # application.properties 파일 생성
         run: |
           cd Application/src/main/resources
-          echo "${{ secrets.APPLICATION_YML }}" > ./application.properties
+          echo "${{ secrets.APPLICATION_YML }}" > application.properties
         shell: bash
 
       - name: Grant execute permission for gradlew  # gradlew 실행 권한 부여
