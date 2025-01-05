@@ -26,8 +26,7 @@ jobs:
       - name: Make application.properties  # application.properties 파일 생성
         run: |
           mkdir -p Application/src/main/resources
-          cd Application/src/main/resources 
-          echo "${{ secrets.APPLICATION_PROPERTIES }}" > application.properties
+          echo "${{ secrets.APPLICATION_PROPERTIES }}" > Application/src/main/resources/application.properties
         shell: bash
 
       - name: Grant execute permission for gradlew  # gradlew 실행 권한 부여
