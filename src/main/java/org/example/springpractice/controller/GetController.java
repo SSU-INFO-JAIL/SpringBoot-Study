@@ -17,7 +17,7 @@ public class GetController {
 
     //http://localhost:8080/api/v1/get-api/name
     @GetMapping(value = "/name")
-    public String getName (){
+    public String getName(){
         return "Flature";
     }
 
